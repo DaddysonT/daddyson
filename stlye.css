@@ -1,0 +1,192 @@
+/* GLOBAL */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #0a0f1c;
+    color: #f0f0f0;
+}
+
+/* NAVBAR */
+.navbar {
+    background: url('bgi.jpg') center/cover no-repeat;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(4px);
+}
+
+/* Name + Titles Block */
+.logo-block {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.logo-block {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.logo {
+    font-size: 2.5rem;
+    color: #fff;
+    text-shadow: 0 0 12px #00bfff;
+    margin: 0;
+}
+
+.tagline {
+    font-size: 1.1rem;
+    color: #ffd86b;
+    margin-top: 5px;
+    text-shadow: 0 0 8px #ffd86b;
+}
+.navbar nav a {
+    background: rgba(31, 42, 68, 0.8);
+    color: #f0f0f0;
+    padding: 10px 15px;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-bottom: -10px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.navbar nav a:hover {
+    background: #00bfff;
+    color: #0a0f1c;
+    transform: scale(1.05);
+}
+
+/* INTRO SECTION */
+/* Make both sides equal height */
+.intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; /* This forces equal height */
+    padding: 60px 20px;
+    gap: 40px;
+}
+
+/* Left side (photo + name) */
+.intro-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* centers photo vertically */
+    align-items: center;
+    background: #1f2a44; /* optional: gives it a card look */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Right side (summary + skills) */
+.intro-right {
+    flex: 2;
+    background: #1f2a44; /* optional: matches left side */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.profile-pic {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #00bfff;
+    box-shadow: 0 0 15px #00bfff;
+}
+
+.name-tag {
+    text-align: center;
+    color: #ffd86b;
+}
+#summary {
+    padding: 60px 20px;
+    background: #0a0f1c;
+    border-bottom: 1px solid #1f2a44;
+    opacity: 0;
+    transform: rotateX(90deg);
+    transition: all 0.8s ease;
+}
+
+#summary.visible {
+    opacity: 1;
+    transform: rotateX(0deg);
+}
+
+#summary h2 {
+    color: #00bfff;
+    text-shadow: 0 0 6px #00bfff;
+}
+
+#summary p {
+    line-height: 1.6;
+    font-size: 1.1rem;
+    color: #f0f0f0;
+}
+
+/* SECTION TRANSITIONS */
+section {
+    opacity: 0;
+    transform: rotateX(90deg);
+    transition: all 0.8s ease;
+    padding: 60px 20px;
+    border-bottom: 1px solid #1f2a44;
+}
+
+section.visible {
+    opacity: 1;
+    transform: rotateX(0deg);
+}
+
+h2 {
+    color: #00bfff;
+    text-shadow: 0 0 6px #00bfff;
+}
+
+/* CARDS */
+.card {
+    background: #1f2a44;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    transition: 0.1s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+}
+
+.card h3 {
+    color: #ffd86b;
+}
+
+.card .date {
+    color: #ccc;
+}
+
+/* FOOTER */
+.footer {
+    background: #1f2a44;
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 3px solid #00bfff;
+}
+
+.footer a {
+    color: #ffd86b;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.footer a:hover {
+    color: #00bfff;
+    text-decoration: underline;
+}
+
+.footer-note {
+    margin-top: 20px;
+    opacity: 0.7;
+}
