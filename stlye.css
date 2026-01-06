@@ -151,7 +151,6 @@ h2 {
     padding: 20px;
     margin: 20px 0;
     border-radius: 8px;
-    transition: 0.1s ease;
 }
 
 .card:hover {
@@ -190,3 +189,4 @@ h2 {
     margin-top: 20px;
     opacity: 0.7;
 }
+
