@@ -129,7 +129,7 @@ body {
 /* SECTION TRANSITIONS */
 section {
     opacity: 0;
-    transform: rotateX(90deg);
+    /*transform: rotateX(90deg);
     /*transition: all 0.8s ease;*/
     padding: 60px 20px;
     border-bottom: 1px solid #1f2a44;
@@ -189,5 +189,6 @@ h2 {
     margin-top: 20px;
     opacity: 0.7;
 }
+
 
 
